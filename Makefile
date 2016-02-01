@@ -29,7 +29,7 @@ rollup-babel-plugin:
 	cd rollup-babel-plugin; npm i; npm run compile
 
 closure:
-	cd closure; java -jar compiler.jar --language_in=ECMASCRIPT6_STRICT --js_output_file='../src/dist/bundle.js' '../src/src/**.js'
+	cd closure; java -jar compiler.jar --compilation_level ADVANCED_OPTIMIZATIONS --language_in=ECMASCRIPT6_STRICT --js_output_file='../src/dist/bundle.js' '../src/src/**.js'
 
 traceur:
 	cd traceur; npm i; npm run compile
